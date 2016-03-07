@@ -81,11 +81,18 @@ aside{
 .sub-menu a i{
 	padding-right: 5px;
 }
-.sub-menu ,.sub-menu a, .header{
+.sub-menu a, .header{
 	color: white;
 	padding: 10px 8px; 
 }
-.sub-menu:hover{
+.sub-menu a{
+	display: block;
+	margin-bottom: 5px;
+}
+.sub-menu a:hover{
+	background: #ee2b6a;
+}
+.sub-menu a.active{
 	background: #9c4c9d; /****morado oscuro***/
 }
 .showback, .content-panel, .form-panel{
@@ -197,9 +204,11 @@ iframe:hover{
 }
 .login-wrap{
 	padding: 15px;
+	border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
 .form-login{
-	border-radius: 5px;
+	border-radius: 6px;
 	background: #68dff0;
 }
 .form-login h2{
